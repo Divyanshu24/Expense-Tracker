@@ -26,8 +26,9 @@ const Register = () => {
             setload(true);
            await  axios.post('/users/register', user);
             toast.successS('registeration completed');
-            setload(false);
             navigate('/login');
+            setload(false);
+            
             
         } catch (error) {
             setload(true);
